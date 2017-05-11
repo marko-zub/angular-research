@@ -1,0 +1,12 @@
+<div>
+	<h3>{{vm.film.Title}}</h3>
+    <div ng-repeat="film in vm.film.Episodes track by $index">
+        <film item="film"></film>
+    </div>
+</div>
+<button ng-click="vm.getFilmsLists('Game of Thrones')" type="button">
+    get 'Game of Thrones'
+</button>
+<button ng-click="vm.getFilmsLists('Star')" type="button">
+    get 'Star'
+</button>
